@@ -32,12 +32,12 @@ echo ""
 
 output="0"
 
-# Check if preprod is running and synced
+# Check if mainnet is running and synced
 sync_progress=$(cardano-cli query tip --mainnet | grep "syncProgress" | cut -d ':' -f 2 | tr -d ' "')
 if [ "$sync_progress" == "100.00" ]; then
-    echo "Preprod is synced"
+    echo "Mainnet is synced"
 else
-    echo "Preprod is not synced"
+    echo "Mainnet is not synced"
     exit 1
 fi
 echo ""
