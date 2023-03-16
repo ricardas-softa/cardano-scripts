@@ -5,11 +5,11 @@
 
 # Check if wallet name is provided
 if [ -z "$1" ]; then
-    payment_name = "payment";
-    stake_name = "stake";
+    payment_name="payment";
+    stake_name="stake";
 else
-    payment_name = $1_payment;
-    stake_name = $1_stake;
+    payment_name=$1_payment;
+    stake_name=$1_stake;
 fi
 
 # Check if wallet already exists

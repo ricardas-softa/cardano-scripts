@@ -5,9 +5,9 @@
 
 # Check if wallet name is provided
 if [ -z "$1" ]; then
-    wallet_name = "payment";
+    wallet_name="payment";
 else
-    wallet_name = $1_payment;
+    wallet_name=$1_payment;
 fi
 
 # Check if wallet exists
